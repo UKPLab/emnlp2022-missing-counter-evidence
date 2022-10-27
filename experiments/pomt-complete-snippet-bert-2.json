@@ -1,0 +1,34 @@
+{
+  "method": "concat",
+  "name": "pomt-bert-base-uncased-complete-snippet-2",
+  "batch-size-train": 16,
+  "batch-size-eval": 16,
+  "lr": 2e-5,
+  "epochs": 5,
+  "seed": 2,
+
+  "model-name": "bert-base-uncased",
+  "lowercase": true,
+  "max-input-len": 512,
+
+  "task-variant": "complete",
+  "evidence-variant": "snippet",
+
+  "task-name": "pomt",
+  "data-dir": "./data",
+
+  "evaluation": {
+    "pomt-all": {
+      "name": "pomt-bb-coms_pomt-test-2", "data": "pomt", "file": "test.jsonl"
+    },
+    "pomt-leaked": {
+      "name": "pomt-bb-coms_pomt-test-leaked-2", "data": "pomt", "file": "leaked-test.jsonl"
+    },
+    "pomt-unleaked": {
+      "name": "pomt-bb-coms_pomt-test-unleaked-2", "data": "pomt", "file": "unleaked-test.jsonl"
+    },
+    "pomt-all-dev": {
+      "name": "pomt-bb-coms_pomt-dev-2", "data": "pomt", "file": "dev.jsonl"
+    }
+  }
+}

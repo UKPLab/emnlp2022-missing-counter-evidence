@@ -1,0 +1,34 @@
+{
+  "method": "concat",
+  "name": "snes-bert-base-uncased-complete-snippet",
+  "batch-size-train": 16,
+  "batch-size-eval": 16,
+  "lr": 2e-5,
+  "epochs": 5,
+  "seed": 1,
+
+  "model-name": "bert-base-uncased",
+  "lowercase": true,
+  "max-input-len": 512,
+
+  "task-variant": "complete",
+  "evidence-variant": "snippet",
+
+  "task-name": "snes",
+  "data-dir": "./data",
+
+  "evaluation": {
+    "snes-all": {
+      "name": "snes-bb-coms_snes-test", "data": "snes", "file": "test.jsonl"
+    },
+    "snes-leaked": {
+      "name": "snes-bb-coms_snes-test-leaked", "data": "snes", "file": "leaked-test.jsonl"
+    },
+    "snes-unleaked": {
+      "name": "snes-bb-coms_snes-test-unleaked", "data": "snes", "file": "unleaked-test.jsonl"
+    },
+    "snes-all-dev": {
+      "name": "snes-bb-coms_snes-dev", "data": "snes", "file": "dev.jsonl"
+    }
+  }
+}
