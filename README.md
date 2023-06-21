@@ -218,14 +218,15 @@ For questions please contact Max Glockner: [lastname]@ukp.informatik.tu-darmstad
 ## Citing the paper  
 Please this bibtex when citing our work:  
 ```  
-@inproceedings{glockner-etal-2022-missing,  
-	 title = "{M}issing {C}ounter-{E}vidence {R}enders {NLP} {F}act-{C}hecking {U}nrealistic for {M}isinformation", 
-	 author = "Glockner, Max and Hou, Yufang and Gurevych, Iryna", 
-	 booktitle = "Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing", 
-	 month = dec, 
-	 year = "2022", 
-	 address = "Abu Dhabi", 
-	 publisher = "Association for Computational Linguistics", 
-	 pages = "(to appear)"
- }  
+@inproceedings{glockner-etal-2022-missing,
+    title = "{M}issing {C}ounter-{E}vidence {R}enders {NLP} {F}act-{C}hecking {U}nrealistic for {M}isinformation",
+    author = "Glockner, Max and Hou, Yufang and Gurevych, Iryna",
+    booktitle = "Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing",
+    month = dec,
+    year = "2022",
+    address = "Abu Dhabi, United Arab Emirates",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.emnlp-main.397",
+    pages = "5916--5936"
+} 
 ```
